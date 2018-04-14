@@ -1,0 +1,32 @@
+{
+    "private": false,
+    "version": "1.0.0",
+    "name": "Rob Simpson - Demo Boilerplate",
+    "description": "Basic atomic design boilerplate to kickstart new front-end resource projects for https://www.robsimpson.me",
+    "main": "gulpfile.babel.js",
+    "author": {
+        "name": "Rob Simpson",
+        "url": "https://www.robsimpson.me"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/robcsimps/demo-boilerplate"
+    },
+    "scripts": {
+        "dev": "gulp | webpack --watch"
+    },
+    "devDependencies": {
+        "babel-core": "^6.0.0",
+        "babel-preset-es2015": "^6.24.1",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^5.0.0",
+        "gulp-file-include": "^1.2.0",
+        "gulp-sass": "^4.0.1",
+        "gulp-server-livereload": "^1.9.2"
+    },
+    "babel": {
+        "presets": [
+            "es2015"
+        ]
+    }
+}
