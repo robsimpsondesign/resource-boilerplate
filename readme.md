@@ -1,6 +1,6 @@
-# 40 adaptable progress loaders using inline SVG and CSS
+# Rob Simpson - Resource Boilerplate
 
-> Basic atomic design boilerplate to kickstart new front-end resource projects for [https://www.robsimpson.me](https://www.robsimpson.me/tutorials/inline-svg-progress-loaders/)
+> Basic atomic design boilerplate to kickstart new front-end resource projects for [https://www.robsimpson.me](https://www.robsimpson.me)
 
 ## Getting Started
 

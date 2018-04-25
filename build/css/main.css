@@ -45,6 +45,16 @@
 =========================================================== */
 /* ===========================================================
 
+	Settings - Typography
+
+	Global website typography variables
+
+
+    1.
+
+=========================================================== */
+/* ===========================================================
+
 	Settings - Unit
 
 	Global website unit variables
@@ -74,8 +84,7 @@
 
 =========================================================== */
 @-ms-viewport {
-	width: device-width;
-}
+  width: device-width; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -90,56 +99,44 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, button {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, main,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+  display: block; }
 
 button,
 input,
 select,
 textarea {
-	background-color: transparent;
-	color: inherit;
-	font: inherit;
-}
+  background-color: transparent;
+  color: inherit;
+  font: inherit; }
 
 html {
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-}
-
-html ::-moz-selection {
-	background: #31cc89;
-}
-
-html ::selection {
-	background: #31cc89;
-}
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; }
+  html ::-moz-selection {
+    background: #31cc89; }
+  html ::selection {
+    background: #31cc89; }
 
 body {
-	background: #f9f9f9;
-	color: #3e3e3e;
-	font-family: "Playfair Display", times;
-}
+  background: #f9f9f9;
+  color: #3e3e3e; }
 
 * {
-	box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 img {
-	display: block;
-	max-width: 100%;
-}
+  display: block;
+  max-width: 100%; }
 
 /* ===========================================================
 
@@ -152,591 +149,20 @@ img {
 
 =========================================================== */
 .l-container {
-	margin-left: auto;
-	margin: auto;
-	max-width: 1480px;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
-}
-
-@media screen and (min-width: 48em) {
-	.l-container {
-		padding-left: 2.5rem;
-		padding-right: 2.5rem;
-	}
-}
-
-@media screen and (min-width: 80em) {
-	.l-container {
-		padding-left: 3.75rem;
-		padding-right: 3.75rem;
-	}
-}
-
-@media screen and (min-width: 87.5em) {
-	.l-container {
-		padding-left: 6.25rem;
-		padding-right: 6.25rem;
-	}
-}
-
-.l-container__section {
-	margin-bottom: 1.875rem;
-}
-
-@media screen and (min-width: 32em) {
-	.l-container__section {
-		margin-bottom: 2.8125rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.l-container__section {
-		margin-bottom: 3.75rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.l-container__section {
-		margin-bottom: 4.6875rem;
-	}
-}
-
-@media screen and (min-width: 80em) {
-	.l-container__section {
-		margin-bottom: 5.625rem;
-	}
-}
-
-.l-container__section:first-of-type {
-	margin-top: 1.875rem;
-}
-
-@media screen and (min-width: 32em) {
-	.l-container__section:first-of-type {
-		margin-top: 2.8125rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.l-container__section:first-of-type {
-		margin-top: 3.75rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.l-container__section:first-of-type {
-		margin-top: 4.6875rem;
-	}
-}
-
-@media screen and (min-width: 80em) {
-	.l-container__section:first-of-type {
-		margin-top: 5.625rem;
-	}
-}
-
-.l-container__section-heading {
-	margin-bottom: 0.625rem;
-}
-
-@media screen and (min-width: 32em) {
-	.l-container__section-heading {
-		margin-bottom: 0.9375rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.l-container__section-heading {
-		margin-bottom: 1.25rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.l-container__section-heading {
-		margin-bottom: 1.5625rem;
-	}
-}
-
-@media screen and (min-width: 80em) {
-	.l-container__section-heading {
-		margin-bottom: 1.875rem;
-	}
-}
-
-.l-container__list {
-	display: grid;
-	grid-gap: 1.875rem;
-	grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (min-width: 32em) {
-	.l-container__list {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.l-container__list {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.l-container__list {
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	}
-}
-
-.l-container__item {
-	background-color: #ffffff;
-	border-radius: 0.125rem;
-	box-shadow: 0 0.3125rem 0.625rem 0 rgba(0, 0, 0, 0.1);
-	padding-top: 100%;
-	position: relative;
-}
-
-.l-container__item:hover .a-loader {
-	fill: #f3f3f3;
-}
-
-.l-container__item .a-loader {
-	left: 50%;
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
-}
-
-/* ===========================================================
-
-    Atoms - Typography
-
-    Global typography styling used throughout the site
-
-
-	1. http://elliotjaystocks.com/blog/kerning/
-	2. Increase letter-spacing on high pixel density screens as they can appear too close
-    3. Word-spacing same as letter-spacing for consistency
-
-=========================================================== */
-body {
-	font-family: "Playfair Display", times;
-	font-size: 1.0625rem;
-	-webkit-font-feature-settings: "liga", "kern";
-	   -moz-font-feature-settings: "liga", "kern";
-	        font-feature-settings: "liga", "kern";
-	-webkit-font-kerning: normal;
-	        font-kerning: normal;
-	line-height: 1.5;
-}
-
-@media screen and (min-width: 32em) {
-	body {
-		font-size: 1.125rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	body {
-		font-size: 1.1875rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	body {
-		font-size: 1.25rem;
-	}
-}
-
-.a-type-heading {
-	color: #000000;
-	font-weight: 900;
-	line-height: 1.25;
-}
-
-.a-type-xxl {
-	color: #000000;
-	font-weight: 900;
-	line-height: 1.25;
-	font-size: 2.5rem;
-}
-
-@media screen and (min-width: 32em) {
-	.a-type-xxl {
-		font-size: 2.6875rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.a-type-xxl {
-		font-size: 3.6875rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.a-type-xxl {
-		font-size: 4.75rem;
-	}
-}
-
-@media screen and (min-width: 80em) {
-	.a-type-xxl {
-		font-size: 5.875rem;
-	}
-}
-
-.a-type-xl {
-	color: #000000;
-	font-weight: 900;
-	line-height: 1.25;
-	font-size: 2.1875rem;
-}
-
-@media screen and (min-width: 32em) {
-	.a-type-xl {
-		font-size: 2.3125rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.a-type-xl {
-		font-size: 3.0625rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.a-type-xl {
-		font-size: 3.8125rem;
-	}
-}
-
-@media screen and (min-width: 80em) {
-	.a-type-xl {
-		font-size: 4.625rem;
-	}
-}
-
-.a-type-lg {
-	color: #000000;
-	font-weight: 900;
-	line-height: 1.25;
-	font-size: 1.875rem;
-}
-
-@media screen and (min-width: 32em) {
-	.a-type-lg {
-		font-size: 2rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.a-type-lg {
-		font-size: 2.5625rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.a-type-lg {
-		font-size: 3.0625rem;
-	}
-}
-
-@media screen and (min-width: 80em) {
-	.a-type-lg {
-		font-size: 3.5625rem;
-	}
-}
-
-.a-type-md {
-	color: #000000;
-	font-weight: 900;
-	line-height: 1.25;
-	font-size: 1.625rem;
-}
-
-@media screen and (min-width: 32em) {
-	.a-type-md {
-		font-size: 1.75rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.a-type-md {
-		font-size: 2.125rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.a-type-md {
-		font-size: 2.4375rem;
-	}
-}
-
-@media screen and (min-width: 80em) {
-	.a-type-md {
-		font-size: 2.75rem;
-	}
-}
-
-.a-type-sm {
-	font-size: 1.4375rem;
-}
-
-@media screen and (min-width: 32em) {
-	.a-type-sm {
-		font-size: 1.5rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.a-type-sm {
-		font-size: 1.75rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.a-type-sm {
-		font-size: 1.9375rem;
-	}
-}
-
-@media screen and (min-width: 80em) {
-	.a-type-sm {
-		font-size: 2.125rem;
-	}
-}
-
-.a-type-xs {
-	font-size: 1.25rem;
-}
-
-@media screen and (min-width: 32em) {
-	.a-type-xs {
-		font-size: 1.3125rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.a-type-xs {
-		font-size: 1.4375rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.a-type-xs {
-		font-size: 1.5625rem;
-	}
-}
-
-@media screen and (min-width: 80em) {
-	.a-type-xs {
-		font-size: 1.625rem;
-	}
-}
-
-.a-type-xxs {
-	font-size: 1.0625rem;
-}
-
-@media screen and (min-width: 32em) {
-	.a-type-xxs {
-		font-size: 1.125rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.a-type-xxs {
-		font-size: 1.1875rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.a-type-xxs {
-		font-size: 1.25rem;
-	}
-}
-
-.a-type-xxxs {
-	font-size: 1rem;
-}
-
-@media screen and (min-width: 32em) {
-	.a-type-xxxs {
-		font-size: 1rem;
-	}
-}
-
-@media screen and (min-width: 48em) {
-	.a-type-xxxs {
-		font-size: 1.0625rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	.a-type-xxxs {
-		font-size: 1.125rem;
-	}
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	p {
-		letter-spacing: .01em;
-		word-spacing: .01em;
-	}
-}
-
-/* ===========================================================
-
-    Atoms - Loaders
-
-    Global loader styling used throughout the site
-
-
-	1.
-
-=========================================================== */
-.a-loader {
-	-webkit-animation: a-loader 4s linear infinite;
-	        animation: a-loader 4s linear infinite;
-	color: #31cc89;
-	fill: none;
-	height: 6rem;
-	stroke: currentColor;
-	stroke-linecap: square;
-	/* butt, round, square */
-	stroke-linejoin: miter;
-	/* bevel, miter, round */
-	stroke-width: 10;
-	vertical-align: top;
-	width: 6rem;
-}
-
-@-webkit-keyframes a-loader {
-	100% {
-		stroke-dashoffset: 0;
-	}
-}
-
-@keyframes a-loader {
-	100% {
-		stroke-dashoffset: 0;
-	}
-}
-
-/* ===========================================================
-
-    Atoms - Loaders Modifiers
-
-
-	1.
-
-=========================================================== */
-.a-loader--circle-1 {
-	stroke-dasharray: 263.46753;
-	stroke-dashoffset: 263.46753;
-	stroke-linecap: butt;
-}
-
-.a-loader--square-1 {
-	stroke-dasharray: 344;
-	stroke-dashoffset: 344;
-	stroke-linecap: butt;
-}
-
-.a-loader--triangle-1 {
-	stroke-dasharray: 260.67651;
-	stroke-dashoffset: 260.67651;
-	stroke-linecap: butt;
-}
-
-.a-loader--infinite-1 {
-	stroke-dasharray: 407.33917;
-	stroke-dashoffset: 407.33917;
-	stroke-linecap: butt;
-}
-
-.a-loader--circle-2 {
-	stroke-dasharray: 65.86688;
-	stroke-dashoffset: 263.46753;
-}
-
-.a-loader--square-2 {
-	stroke-dasharray: 86;
-	stroke-dashoffset: 344;
-}
-
-.a-loader--triangle-2 {
-	stroke-dasharray: 65.16913;
-	stroke-dashoffset: 260.67651;
-}
-
-.a-loader--infinite-2 {
-	stroke-dasharray: 101.83479;
-	stroke-dashoffset: 407.33917;
-}
-
-.a-loader--circle-3 {
-	stroke-dasharray: 1 263.46753;
-	stroke-dashoffset: 263.46753;
-}
-
-.a-loader--square-3 {
-	stroke-dasharray: 1 344;
-	stroke-dashoffset: 344;
-}
-
-.a-loader--triangle-3 {
-	stroke-dasharray: 1 260.67651;
-	stroke-dashoffset: 260.67651;
-}
-
-.a-loader--infinite-3 {
-	stroke-dasharray: 1 407.33917;
-	stroke-dashoffset: 407.33917;
-}
-
-.a-loader--circle-4 {
-	stroke-dasharray: 1 131.73376;
-	stroke-dashoffset: 263.46753;
-}
-
-.a-loader--square-4 {
-	stroke-dasharray: 1 172;
-	stroke-dashoffset: 344;
-}
-
-.a-loader--triangle-4 {
-	stroke-dasharray: 1 130.33826;
-	stroke-dashoffset: 260.67651;
-}
-
-.a-loader--infinite-4 {
-	stroke-dasharray: 1 203.66959;
-	stroke-dashoffset: 407.33917;
-}
-
-.a-loader--circle-5 {
-	stroke-dasharray: 21.95563 0 21.95563;
-	stroke-dashoffset: 263.46753;
-}
-
-.a-loader--square-5 {
-	stroke-dasharray: 28.66667 0 28.66667;
-	stroke-dashoffset: 344;
-}
-
-.a-loader--triangle-5 {
-	stroke-dasharray: 21.72304 0 21.72304;
-	stroke-dashoffset: 260.67651;
-}
-
-.a-loader--infinite-5 {
-	stroke-dasharray: 33.94493 0 33.94493;
-	stroke-dashoffset: 407.33917;
-}
-
-.a-loader--rounded {
-	stroke-linecap: round;
-	stroke-linejoin: round;
-}
+  margin-left: auto;
+  margin: auto;
+  max-width: 1480px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem; }
+  @media screen and (min-width: 48em) {
+    .l-container {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem; } }
+  @media screen and (min-width: 80em) {
+    .l-container {
+      padding-left: 3.75rem;
+      padding-right: 3.75rem; } }
+  @media screen and (min-width: 87.5em) {
+    .l-container {
+      padding-left: 6.25rem;
+      padding-right: 6.25rem; } }
