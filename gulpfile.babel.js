@@ -29,8 +29,7 @@ gulp.task('html', () => {
 	gulp.src([`${srcpaths.html}/*.html`])
 		.pipe(include({
 			prefix: '@',
-			basepath: srcpaths.html,
-			indent: true
+			basepath: srcpaths.html
 		}))
 		.pipe(gulp.dest(distpaths.html));
 });
@@ -38,11 +37,7 @@ gulp.task('html', () => {
 // Compile SASS to CSS
 gulp.task('css', () => {
     gulp.src(`${srcpaths.css}/**/*.scss`)
-        .pipe(sass({
-			indentType: 'tab',
-			indentWidth: 1,
-			outputStyle: 'expanded'
-		}))
+        .pipe(sass())
         .pipe(autoprefixer({browsers: ['ie >= 11', 'ie_mob >= 11', 'ff >= 30', 'chrome >= 34', 'safari >= 7', 'opera >= 23', 'ios >= 7', 'android >= 4.4', 'bb >= 10']}))
 		.pipe(gulp.dest(distpaths.css));
 });
@@ -57,6 +52,6 @@ gulp.task('server', () => {
   });
 
 gulp.task('default', ['html', 'css', 'server'], () => {
-	gulp.watch(`${srcpaths.html}/**/**/*.html`, ['html']);
+	gulp.watch(`${srcpaths.html}/*.html`, ['html']);
 	gulp.watch(`${srcpaths.css}/**/*.scss`, ['css']);
 });

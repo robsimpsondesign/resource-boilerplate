@@ -1,7 +1,7 @@
 {
     "private": false,
     "version": "1.0.0",
-    "name": "resource-boilerplate",
+    "name": "demo-boilerplate",
     "description": "Basic atomic design boilerplate to kickstart new front-end resource projects for https://www.robsimpson.me",
     "main": "gulpfile.babel.js",
     "author": {
@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/robcsimps/resource-boilerplate"
+        "url": "https://github.com/robcsimps/demo-boilerplate"
     },
     "scripts": {
         "dev": "gulp | webpack --watch"
