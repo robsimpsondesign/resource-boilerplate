@@ -1,0 +1,90 @@
+/* ===========================================================
+
+    Atoms - Loaders
+
+    Global loader styling used throughout the site
+
+
+	1.
+
+=========================================================== */
+
+$a-loader-duration: 4s;
+
+.a-loader {
+    animation: a-loader $a-loader-duration linear infinite;
+    color: $co-primary;
+    fill: none;
+    height: rem(96px);
+    stroke: currentColor;
+    stroke-linecap: square; /* butt, round, square */
+    stroke-linejoin: miter; /* bevel, miter, round */
+    stroke-width: 10;
+    vertical-align: top;
+    width: rem(96px);
+}
+
+@keyframes a-loader {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* ===========================================================
+
+    Atoms - Loaders Modifiers
+
+
+	1.
+
+=========================================================== */
+
+$a-loader-lengths: (
+    circle: 263.467529296875,
+    square: 344,
+    triangle: 260.676513671875,
+    infinite: 407.33917236328125
+);
+
+@each $name, $value in $a-loader-lengths {
+    .a-loader--#{$name}-1 {
+        stroke-dasharray: $value;
+        stroke-dashoffset: $value;
+        stroke-linecap: butt;
+    }
+}
+
+@each $name, $value in $a-loader-lengths {
+    .a-loader--#{$name}-2 {
+        stroke-dasharray: $value / 4;
+        stroke-dashoffset: $value;
+    }
+}
+
+@each $name, $value in $a-loader-lengths {
+    .a-loader--#{$name}-3 {
+        stroke-dasharray: 1 $value;
+        stroke-dashoffset: $value;
+    }
+}
+
+
+@each $name, $value in $a-loader-lengths {
+    .a-loader--#{$name}-4 {
+        stroke-dasharray: 1 $value / 2;
+        stroke-dashoffset: $value;
+    }
+}
+
+@each $name, $value in $a-loader-lengths {
+    .a-loader--#{$name}-5 {
+        stroke-dasharray: $value / 12 0 $value / 12;
+        stroke-dashoffset: $value;
+    }
+}
+
+.a-loader--rounded {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
